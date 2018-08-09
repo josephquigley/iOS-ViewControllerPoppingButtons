@@ -36,6 +36,7 @@ extension PopsViewController {
             button.addTarget(self, action: #selector(tryPopController), for: .touchUpInside)
         }
         if let barButton = self as? UIBarButtonItem {
+            barButton.target = self
             barButton.action = #selector(tryPopController)
         }
     }
